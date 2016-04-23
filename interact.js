@@ -11,7 +11,7 @@ export function log(data, out = 'console') {
 export function warn(data, out = 'console') {
     switch(out) {
         case 'chat':
-            channel.socket.emit("chatMessage", "Warning : "+msg);
+            channel.socket.emit("chatMessage", "Warning : " + msg);
             break;
         case 'console':
             console.warn(data);
@@ -21,7 +21,7 @@ export function warn(data, out = 'console') {
 export function info(data, out = 'console') {
     switch(out) {
         case 'chat':
-            channel.socket.emit("chatMessage", "Info : "+msg);
+            channel.socket.emit("chatMessage", "Info : " + msg);
             break;
         case 'console':
             console.info(data);
@@ -31,7 +31,7 @@ export function info(data, out = 'console') {
 export function error(data, out = 'console') {
     switch(out) {
         case 'chat':
-            channel.socket.emit("chatMessage", "Error : "+msg);
+            channel.socket.emit("chatMessage", "Error : " + msg);
             break;
         case 'console':
             console.error(data);
