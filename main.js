@@ -1,7 +1,7 @@
 function load(files) {
   for(file of files) {
     let l=document.createElement('script');
-    l.src='https://rawgit.com/johynpapin/Narcisse/${file}.js';
+    l.src='https://rawgit.com/johynpapin/Narcisse/'+file+'.js';
     document.body.appendChild(l)
   }
 }
