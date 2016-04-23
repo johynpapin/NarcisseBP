@@ -1,5 +1,11 @@
-import * as interact from 'interact';
+function load(files) {
+  for(file of files) {
+    let l=document.createElement('script');
+    l.src='https://rawgit.com/johynpapin/Narcisse/${file}.js';
+    document.body.appendChild(l)
+  }
+}
 
-interact.log('Ceci va s’afficher dans la console du navigateur.');
+load(['interact']);
 
-interact.info('Ceci est une information.');
+interact.log('Ceci est un test qui sera, je l’espère concluant.');
